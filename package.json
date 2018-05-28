@@ -1,0 +1,42 @@
+{
+  "name": "httpaddr",
+  "version": "0.9.0",
+  "description": "Filter http remote address though proxies & CIDR masks",
+  "main": "index.js",
+
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/131/httpaddr.git"
+  },
+  "keywords": [
+    "proxies",
+    "remote",
+    "address",
+    "htaccess",
+    "allow",
+    "all",
+    "deny"
+  ],
+  "author": "Francois Leurent <131.js@cloudyks.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/131/httpaddr/issues"
+  },
+  "homepage": "https://github.com/131/httpaddr#readme",
+  "dependencies": {
+    "ipaddr.js": "^1.7.0"
+  },
+  "scripts": {
+    "eslint": "eslint index.js test",
+    "checkall": "npm run eslint",
+    "mocha": "node node_modules/mocha/bin/_mocha",
+    "test": "node node_modules/istanbul/lib/cli.js cover --report text-summary --report html --report lcov  node_modules/mocha/bin/_mocha --",
+    "coveralls": "npm install coveralls && node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "istanbul": "^1.1.0-alpha.1",
+    "eslint-plugin-ivs": "^1.3.0",
+    "mocha": "^3.1.2"
+  }
+}
