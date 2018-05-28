@@ -1,6 +1,6 @@
 {
   "name": "httpaddr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Filter http remote address though proxies & CIDR masks",
   "main": "index.js",
   "repository": {
